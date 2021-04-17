@@ -24,6 +24,17 @@
 (auto-compile-on-load-mode)
 (auto-compile-on-save-mode)
 
+;;Force plugins at head to reduce startup time.
+(defun update-load-path (&rest _)
+    "Update `load-path'."
+      (dolist (dir '("plugins"))
+	    (push (expand-file-name dir user-emacs-directory) load-path)))
+
+;; Add plugins dir to load path.
+(let ((default-directory  "~/.emacs.d/plugins/"))
+    (normal-top-level-add-subdirs-to-load-path))
+
+
 ;; Prevent package.el from loading
 (setq package-enable-at-startup nil)
 
