@@ -22,9 +22,6 @@
 	url = git@github.com:magit/magit.git
 	recursive-byte-compile = true
 	info-path = Documentation
-[submodule "packed"]
-	path = lib/packed
-	url = git@github.com:emacscollective/packed.git
 [submodule "transient"]
 	path = lib/transient
 	url = git@github.com:magit/transient.git
