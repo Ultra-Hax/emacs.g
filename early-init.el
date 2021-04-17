@@ -10,6 +10,13 @@
 
 (setq load-prefer-newer t)
 
+
+;; Enable deffered compilation for Emacs native comp.
+(setq comp-deferred-compilation t)
+
+;; Prevent Emacs from pinging things that look like domain names.
+(setq ffap-machine-p-known 'reject)
+
 ;; Disable gui elements before they are initialized.
 (push '(menu-bar-lines . 0) default-frame-alist)
 (push '(tool-bar-lines . 0) default-frame-alist)
