@@ -13,6 +13,9 @@
 (use-package dash)
 (use-package eieio)
 
+
+;; Use autocompile to ensure that emacs never loads outdated bytecompiled files
+
 (use-package auto-compile
   :config
   (setq auto-compile-display-buffer               nil)
