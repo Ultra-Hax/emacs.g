@@ -11,7 +11,6 @@
   (setq use-package-verbose t))
 
 (use-package dash)
-(use-package eieio)
 
 
 ;; Use autocompile to ensure that emacs never loads outdated bytecompiled files
@@ -23,17 +22,6 @@
   (setq auto-compile-source-recreate-deletes-dest t)
   (setq auto-compile-toggle-deletes-nonlib-dest   t)
   (setq auto-compile-update-autoloads             t))
-
-
-
-
-
-(use-package dash
-  :config (global-dash-fontify-mode 1))
-
-
-
-
 
 
 ;; Local Variables:
