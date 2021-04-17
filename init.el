@@ -21,10 +21,6 @@
   (setq auto-compile-toggle-deletes-nonlib-dest   t)
   (setq auto-compile-update-autoloads             t))
 
-(use-package epkg
-  :defer t
-  :init (setq epkg-repository
-              (expand-file-name "var/epkgs/" user-emacs-directory)))
 
 (use-package custom
   :no-require t
@@ -39,6 +35,8 @@
 
 
 ;;; Long tail
+
+;;(use-package gcmh)
 
 (use-package dash
   :config (global-dash-fontify-mode 1))
