@@ -1,5 +1,14 @@
 ;;; early-init.el --- earliest birds               -*- lexical-binding: t -*-
 
+
+;; Disable GC until gcmh-mode is loaded
+(setq gc-cons-threshold most-positive-fixnum)
+
+
+;; Inhibit resizing frame greatly improving performace
+
+(setq frame-inhibit-implied-resize t)
+
 (setq load-prefer-newer t)
 
 (let ((dir (file-name-directory (or load-file-name buffer-file-name))))
