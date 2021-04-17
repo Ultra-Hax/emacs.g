@@ -1,4 +1,4 @@
-;;; init.el --- user-init-file                    -*- lexical-binding: t -*-
+;;; init.el --- user-init-file                    -*- no-byte-compile: t lexical-binding: t -*-
 ;;; Early birds
 
 (eval-and-compile ; `borg'
