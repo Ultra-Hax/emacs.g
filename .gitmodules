@@ -38,3 +38,6 @@
 [submodule "gcmh"]
 	path = lib/gcmh
 	url = git@github.com:emacsmirror/gcmh.git
+[submodule "all-the-icons"]
+	path = lib/all-the-icons
+	url = git@github.com:domtronn/all-the-icons.el.git
