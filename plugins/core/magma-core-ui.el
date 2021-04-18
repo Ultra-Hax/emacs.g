@@ -3,12 +3,16 @@
 (defalias 'yes-or-no-p 'y-or-n-p)
 
 ;; Show matching parenthesis
-(show-paren-mode 1)
+
+(add-hook 'prog-mode-hook 'show-paren-mode 1)
+
+;;Disable that annoying blinking cursor.
 (setq blink-cursor-mode nil)
+
 ;; Disable dialogs boxes
 (setq use-dialog-box nil)
 
-;; Enable line numbers
-(add-hook 'prog-mode-hook 'linum-mode)
+;; Enable line numbers for programming modes
+(add-hook 'prog-mode-hook 'display-line-numbers-mode)
 
 (provide 'magma-core-ui)
