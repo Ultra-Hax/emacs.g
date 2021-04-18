@@ -1,6 +1,9 @@
 [borg]
 	pushDefault = locutus
 	collective = emacsg
+[submodule "all-the-icons"]
+	path = lib/all-the-icons
+	url = git@github.com:domtronn/all-the-icons.el.git
 [submodule "auto-compile"]
 	path = lib/auto-compile
 	url = git@github.com:emacscollective/auto-compile.git
@@ -14,6 +17,12 @@
 [submodule "diff-hl"]
 	path = lib/diff-hl
 	url = git@github.com:dgutov/diff-hl.git
+[submodule "doom-themes"]
+	path = lib/doom-themes
+	url = https://github.com/hlissner/emacs-doom-themes
+[submodule "gcmh"]
+	path = lib/gcmh
+	url = git@github.com:emacsmirror/gcmh.git
 [submodule "git-modes"]
 	path = lib/git-modes
 	url = git@github.com:magit/git-modes.git
@@ -35,12 +44,3 @@
 [submodule "with-editor"]
 	path = lib/with-editor
 	url = git@github.com:magit/with-editor.git
-[submodule "gcmh"]
-	path = lib/gcmh
-	url = git@github.com:emacsmirror/gcmh.git
-[submodule "all-the-icons"]
-	path = lib/all-the-icons
-	url = git@github.com:domtronn/all-the-icons.el.git
-[submodule "doom-themes"]
-	path = lib/doom-themes
-	url = git@github.com:hlissner/emacs-doom-themes.git
