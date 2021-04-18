@@ -15,4 +15,11 @@
 ;; Enable line numbers for programming modes
 (add-hook 'prog-mode-hook 'display-line-numbers-mode)
 
+(use-package all-the-icons
+	:commands (all-the-icons-octicon
+                   all-the-icons-faicon
+                   all-the-icons-fileicon
+                   all-the-icons-wicon
+                   all-the-icons-material
+  	           all-the-icons-alltheicon))
 (provide 'magma-core-ui)
