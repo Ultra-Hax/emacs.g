@@ -43,5 +43,5 @@
 ;; Disable bidirectional text rendering to improve performance
 (setq-default bidi-display-reordering 'left-to-right
               bidi-paragraph-direction 'left-to-right)
-
+(use-package all-the-icons)
 (provide 'magma-core)

@@ -1,5 +1,7 @@
 ;;; magma-core-ui.el  -*- lexical-binding: t -*-
 
+
+(require 'magma-core)
 (defalias 'yes-or-no-p 'y-or-n-p)
 
 ;; Show matching parenthesis
@@ -15,11 +17,12 @@
 ;; Enable line numbers for programming modes
 (add-hook 'prog-mode-hook 'display-line-numbers-mode)
 
-(use-package all-the-icons
-	:commands (all-the-icons-octicon
-                   all-the-icons-faicon
-                   all-the-icons-fileicon
-                   all-the-icons-wicon
-                   all-the-icons-material
-  	           all-the-icons-alltheicon))
+;;(use-package all-the-icons
+;;	:commands (all-the-icons-octicon
+                   ;;all-the-icons-faicon
+                   ;;all-the-icons-fileicon
+                   ;;all-the-icons-wicon
+                  ;; all-the-icons-material
+  	         ;;  all-the-icons-alltheicon
+	        ;;   all-the-icons-install-fonts))
 (provide 'magma-core-ui)
