@@ -17,12 +17,7 @@
 ;; Enable line numbers for programming modes
 (add-hook 'prog-mode-hook 'display-line-numbers-mode)
 
-;;(use-package all-the-icons
-;;	:commands (all-the-icons-octicon
-                   ;;all-the-icons-faicon
-                   ;;all-the-icons-fileicon
-                   ;;all-the-icons-wicon
-                  ;; all-the-icons-material
-  	         ;;  all-the-icons-alltheicon
-	        ;;   all-the-icons-install-fonts))
+;; Install all-the-icons which is important for many UI related packages.
+(use-package all-the-icons)
+
 (provide 'magma-core-ui)
